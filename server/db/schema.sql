@@ -14,13 +14,19 @@ CREATE TABLE user_info (
 CREATE TABLE house_listing (
     id INT NOT NULL,
     name VARCHAR(200) NOT NULL,
+    type VARCHAR(100) NOT NULL,
+    year INT NOT NULL,
+    amenities VARCHAR(200) NOT NULL,
+    parking VARCHAR(200) NOT NULL,
+    size INT NOT NULL,
     location VARCHAR(100) NOT NULL,
     price INT NOT NULL,
     negotiate BOOLEAN NOT NULL,
     description VARCHAR(1000) NOT NULL,
     problems VARCHAR(1000) NOT NULL,
     perks VARCHAR(1000) NOT NULL,
-    
+    hoa VARCHAR(1000) NOT NULL,
+
     pictures foreign_key, 
-    
+    PRIMARY KEY (id)
 )
